@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Guía del Proyecto
 
-## Getting Started
+## Cómo Levantar el Proyecto
 
-First, run the development server:
+### Prerrequisitos
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Antes de comenzar, asegúrate de tener instalado:
+- Node.js (v12.x o superior)
+- npm (viene con Node.js) o yarn
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Instalación
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clona el repositorio:
+   ```
+   git clone https://tu-repositorio.git
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. Navega al directorio del proyecto:
+   ```
+   cd tu-proyecto
+   ```
 
-## Learn More
+3. Instala las dependencias:
+   ```
+   npm install
+   ```
+   o si usas yarn:
+   ```
+   yarn install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+4. Inicia el servidor de desarrollo:
+   ```
+   npm run dev
+   ```
+   o con yarn:
+   ```
+   yarn dev
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Visita http://localhost:3000 en tu navegador para ver la aplicación en funcionamiento.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Características del Proyecto
 
-## Deploy on Vercel
+- **TypeScript**: Utilizado para añadir tipado estático al código, mejorando la legibilidad y reduciendo los errores en tiempo de ejecución.
+- **ESLint**: Configurado para mantener un código limpio y consistente, siguiendo las mejores prácticas de codificación.
+- **Tailwind CSS**: Utilizado para un diseño rápido y responsivo, permitiendo un desarrollo ágil de la interfaz de usuario.
+- **Next.js**: Framework de React que proporciona renderizado del lado del servidor y generación de sitios estáticos para proyectos de React.
+- **src/**: Estructura de directorios para organizar el código fuente del proyecto de manera clara.
+- **App Router**: Gestión de rutas con Next.js para una navegación eficiente y organizada dentro de la aplicación.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Características y Buenas Prácticas del Proyecto
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Características Principales
+
+- **Alias de Importación (@/)**: Configurados para simplificar los imports y mejorar la estructura del proyecto, permitiendo referencias más limpias y mantenibles a los módulos y componentes.
+- **Control de Errores**: Implementación de un manejo de errores robusto para mejorar la experiencia del usuario y facilitar el debugging, asegurando que la aplicación maneje graciosamente situaciones inesperadas.
+
+### Buenas Prácticas Implementadas
+
+#### Código y SEO
+
+- **React**: Uso de componentes funcionales y hooks para un código más limpio, moderno y reutilizable.
+- **SEO**: Aplicación de etiquetas <meta> relevantes en las páginas para mejorar el SEO, ayudando a mejorar la visibilidad y el ranking en motores de búsqueda.
+- **Accesibilidad y Estructura Semántica HTML**: Implementación de prácticas de accesibilidad y uso de una estructura semántica HTML para mejorar la usabilidad y accesibilidad del sitio web.
+
+#### Mantenibilidad y Escalabilidad
+
+- **Modularidad**: Código organizado en módulos y componentes reutilizables para facilitar la mantenibilidad y escalabilidad del proyecto.
+- **Documentación y Comentarios**: Mantenimiento de una documentación clara y la inclusión de comentarios en el código cuando es necesario para explicar la lógica compleja o decisiones importantes.
+- **Pruebas Unitarias**: Implementación de pruebas unitarias para garantizar la calidad del código y prevenir regresiones, facilitando así el desarrollo continuo y la integración de nuevas características.
+
+## Consideraciones para el Desarrollo Futuro
+
+Este proyecto está diseñado para ser la base sobre la cual otros desarrolladores pueden construir y expandir. La estructura del proyecto, junto con las herramientas y prácticas implementadas, aseguran que el código sea mantenible y escalable. Se anima a los futuros desarrolladores a seguir las convenciones establecidas y a contribuir con nuevas características y mejoras, manteniendo siempre en mente la importancia de la calidad del código, la experiencia del usuario y las mejores prácticas de SEO.
